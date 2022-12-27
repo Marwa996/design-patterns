@@ -33,9 +33,9 @@ class Bike extends Vehicle{
 }
 
 class Audi extends Car{
-    constructor(ownershipCost, warranty, seatingCapacity, fuelType, modelType)
+    constructor(mileage, price, ownershipCost, warranty, seatingCapacity, fuelType, modelType)
     {
-        super(ownershipCost, warranty, seatingCapacity, fuelType);
+        super(mileage, price, ownershipCost, warranty, seatingCapacity, fuelType);
             this.modelType=modelType;
         
     }
@@ -45,9 +45,9 @@ class Audi extends Car{
 }
 
 class Ford extends Car{
-    constructor(ownershipCost, warranty, seatingCapacity, fuelType, modelType)
+    constructor(mileage, price, ownershipCost, warranty, seatingCapacity, fuelType, modelType)
     {
-        super(ownershipCost, warranty, seatingCapacity, fuelType);
+        super(mileage, price, ownershipCost, warranty, seatingCapacity, fuelType);
             this.modelType=modelType;
         
     }
@@ -57,8 +57,8 @@ class Ford extends Car{
 }
 
 class Bajaj extends Bike{
-    constructor(cylinders, gears, coolingType, wheelType, fuelTankSize, maketype){
-        super(cylinders, gears, coolingType, wheelType, fuelTankSize);
+    constructor(mileage, price, gears, coolingType, wheelType, fuelTankSize, maketype){
+        super(mileage, price, gears, coolingType, wheelType, fuelTankSize);
         this.maketype=maketype;
     }
     display3(){
@@ -67,8 +67,8 @@ class Bajaj extends Bike{
 }
 
 class TVS extends Bike{
-    constructor(cylinders, gears, coolingType, wheelType, fuelTankSize, maketype){
-        super(cylinders, gears, coolingType, wheelType, fuelTankSize);
+    constructor(mileage, price, gears, coolingType, wheelType, fuelTankSize, maketype){
+        super(mileage, price, gears, coolingType, wheelType, fuelTankSize);
         this.maketype=maketype;
     }
     display4(){
@@ -79,11 +79,11 @@ class TVS extends Bike{
 // let vehicle = new Vehicle(10.000, 20.000);
 // let car = new Car(20.000, "VEHICLE", 10, "petrol");
 
-let car1 =new Ford(35.000, "FORD", 5, "diesel", "Ford2022");
-let car2 =new Audi(40.000, "AUDI", 7, "petrol", "Audi2022");
+let car1 =new Ford(70,70.000,90.000, "FORD", 5, "diesel", "Ford2022");
+let car2 =new Audi(50,50.000,20.000, "AUDI", 7, "petrol", "Audi2022");
 
-let bike1 =new Bajaj(5,10,"air","wheel",40,"phonix");
-let bike2 =new TVS(4,9,"liquid","wheel",50,"phonix");
+let bike1 =new Bajaj(20.000,50.000,10,"air","wheel",40,"phonix");
+let bike2 =new TVS(30.000,30.000,"liquid","wheel",50,"phonix");
 
 console.log(car1.display2());
 console.log(car2.display1());
